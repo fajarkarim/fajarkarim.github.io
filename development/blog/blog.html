@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fajar's Note</title>
+    <style media="screen">
+      @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+      header {
+        background-color: #263d36;
+        background-image: url("img/grass.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        line-height: 1.2;
+        padding: 10vw 2em;
+        text-align: center;
+        max-width: none;
+        font-family: "Helvetica", "Arial", sans-serif;
+      }
+
+      header h1 {
+        color: white;
+        font-size: 2.5em;
+        font-weight: 300;
+      }
+
+
+      main {
+        margin : 0 auto;
+        max-width: 50em;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        line-height: 1.5;
+        padding: 4em 1em;
+        color: #566b78;
+      }
+
+      h2 {
+        margin-top: 1em;
+        padding-top: 1em;
+      }
+
+      h1, h2, strong {
+        color: #333;
+      }
+
+      pre {
+        background: #f5f7f9;
+        border-bottom: 1px bottom #f5f7f9;
+        padding : 1em;
+        color: #a7adba;
+        border-left: 2px solid #69c;
+      }
+
+      code {
+        padding: 2px 4px;
+        vertical-align: text-bottom;
+      }
+
+      a {
+        color: #e81c4f;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <h1>YOU CAN LEARN ANYTHING</h1>
+    </header>
+    <main>
+      <section id="minggu-1">
+        <h2>Refleksi Minggu 1 Fase 0</h2>
+        <h3>Intro</h3>
+        <p>
+          Minggu ini banyak hal baru yang gw pelajarin, terutama dibidang frontend web.
+          Kesulitan pasti ada, beberapa diantaranya adalah pemilihan warna buat web,
+          banyak tag html dan css selector yang blm gw tau fungsinya buat apa, dan
+          gimana caranya biar web gw jadi responsif.
+        </p>
+        <h3>Masalah</h3>
+        <p>
+          Masalah yang gw hadapi : <br>
+          <ul>
+            <li>bedanya div sama section tuh apa ?</li>
+            <li>Pertama pas bikin tampilan website, apa aja yang perlu diperhitungkan</li>
+            <li>Bikin web jadi responsive tuh gimana?</li>
+            <li>HTML tag dan CSS selector banyak banget, apa gw musti apalin satu2 ?</li>
+            <li>Feel seni gw kurang, cari referensi dari mana ?</li>
+            <li>dst...</li>
+          </ul>
+        </p>
+        <h3>Solusi</h3>
+        <p>
+          Solusinya antara lain:
+        </p>
+        <p>
+          Ternyata div adalah tag yang generic, contoh lain tag generic adalah span.
+          Apa maksud dari generic, artinya adalah umum. Tag-tag tersebut biasa dipakai
+          untuk bikin blok per blok. Jadi apa gw bisa make secara terbalik antara div
+          dengan span ?. Jawabannya boleh aja, cuman itu ga umum. Tag span biasanya
+          dipakai untuk membuat blok per baris, sedangkan div bener2 buat ngeblok
+          satu blok hehe.. Namun kesamaan dari kedua tag tersebut (span dan div) adalah
+          sebagai batas menghias. Yang nantinya dihias lewat css.
+        </p>
+        <p>
+          Section sendiri adalah tag yang baru dari versi HTML5. Tag ini ga jauh beda sama
+          div, hanya aja tag ini akan ngefek ke SEO atau Search Engine Optimation. Jadi ketika
+          Om google ngescan halaman web kita, tag section akan menjadi tag yang menjadi salah satu
+          acuan dalam mencari konten dari web kamu. Contoh tag lain yang berkaitan sama SEO adalah
+          article, em, strong, dll.<a href="https://www.w3schools.com/tags/default.asp">
+          Aku mau lihat lebih banyak Tag HTML !</a>
+        </p>
+        <p>
+          Dari beberapa referensi yang gw temuin, membuat web emang ga gampang(masa seeh?).
+          Tapi dalam perencanaan ada baiknya kita bikin gambarannya terlebih dahulu. Bisa kamu gambar
+          di kertas oret-oretan. Nama metodenya adalah wireframe. Wireframe adalah metode oret-oret
+          dengan menggambarkan box demi box, yang menggambarkan letak dari header, navigasi, konten,
+          comment, footer, dan lain hal yang perlu ada di web kamu. Dan jangan lupa hal <strong>penting ini</strong>
+          yaitu, tujuan dari dibuatnya web ini. Ini yang nanti akan menentukan design, konten, dan segala macam
+          agar visitor kamu tertarik dengan web yang kamu buat.<a href="https://webdesign.tutsplus.com/articles/a-beginners-guide-to-wireframing--webdesign-7399">
+          Lebih jelas dengan wireframing!!</a>
+        </p>
+        <p>
+          Responsif artinya selalu respon terhadap perubahan yang ada. Di web sendiri sifat responsif terjadi ketika
+          adanya perubahan pada ukuran layar visitor. Sekarang orang lebih banyak mengkases internet di mobile daripada
+          dari laptop atau pc, ini yang menjadikan sifat responsif jadi sangat penting. Bootstrap adalah salah satu
+          framework yang banyak digunakan untuk menjadikan sebuah web menjadi responsif. Tapi, kalau kamu pengen yang hardway
+          kamu harus utak-atik cssnya dengan menggunakan selektor media queries. Apa itu ? itu adalah selektor yang bertugas
+          untuk mendeteksi perubahan pada layar.
+        </p>
+        <p>Sebagai contoh adalah kode dibawah ini.</p>
+        <p>@media only screen dst.. adalah tag yang membutuhkan kondisional. Dalam hal ini kondisional yang dimaksud adalah
+        <em>min-width</em>. Artinya jika lebar layar kamu kurang dari 768px, misalnya 700px. Maka, aturan didalam kurung kurawal kaga terjadi.</p>
+          <pre>
+    @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+    }
+          </pre>
+          <br>
+          <p>Nah, kode dibawah ini akan mengubah ukuran fontnya menjadi 20px jika layarnya landscape dan minimal ukuran layarnya
+          adalah 1000px.</p>
+          <pre>
+    body{ font-size: 18px;}
+
+    @media (min-width: 1000px) and (orientation: landscape) {
+      body{ font-size: 20px;}
+    }
+          </pre>
+
+        <h3>Kesimpulan</h3>
+        <p>
+          Jadi, banyak lah membaca dan mencoba. Dan yang ga kalah penting adalah mengamalkan
+          hal yang udah kamu pelajari kepada siapa pun. Contoh kecilnya adalah nulis blog. Have fun gengs!
+        </p>
+        <p>Referensi dari gw</p>
+        <ul>
+          <li><a href="http://marksheet.io">HTML and CSS tutorial</a></li>
+          <li><a href="https://www.w3schools.com/cssref/default.asp">CSS reference</a></li>
+          <li><a href="https://www.w3schools.com/howto/">HTML How To</a></li>
+          <li><a href="http://jgthms.com/web-design-in-4-minutes/">Web Design in 4 minutes</a></li>
+        </ul>
+      </section>
+      <section id="minggu-2">
+        <h2>Refleksi Minggu 2 Fase 0</h2>
+        <p>
+          Minggu kedua udah mulai masuk ke topik javascript. Untuk pemograman sendiri,
+          gw pernah belajar pascal, c++, dan python. Tapi itu pun gw ga ngerti karena pada
+          saat itu gw ga suka ngoding (sekarang agak berkurang hehe..). Tapi untuk materinya
+          gw agak-agak paham terutama pada kondisional dan iterasi.
+        </p>
+        <p>
+          Belajar dari pengalaman gw yang dulu, dimana pada saat itu gw nyerah belajar algoritma
+          karena stack di pengulangan dan cara buat fungsi yang akhirnya merembet dengan ketidakpahaman gw terhadap
+          pemograman. So, yang terpenting pahami baik-baik apa yang dipelajari, <q cite="#">just take it slow and relax</q>.Yang terpentin
+          jangan takut salah, coba terus, terus ingin tahu, dan jangan cepat nyerah.
+        </p>
+        <p>
+          Untuk projek terakhir minggu dua, gw ngerasa capek banget abis ngoding. Serasa ngebangun rumah haha.
+          Untuk pertama kalinya gw ngoding lebih dari 100 baris, dan rasanya agak wah,, ga nyangka. But
+          it's really exiting. Dan momentum ini harus dijaga seterus-terusnya. Have fun gengs!
+        </p>
+      </section>
+      <section id="minggu-3">
+        <h2>Refleksi Minggu 3 Fase 0</h2>
+        <p>
+          Nah,, ini nih udah mulai ngejelimetnya haha. Pada awalnya agak deg-degan dengan challenge dari coderbyte, gw kira
+          harus tepat waktunya. 10 menit satu soal bikin agak jiper juga, tapi rasanya emang harus dilatih bener-bener.
+          Karena masalah emang harus selesai secepat-cepatnya bukan ?.
+        </p>
+        <p>
+          Challenge-challenge di minggu ini lebih kearah iterasi dan kondisional. Dan diakhir ada sesi live coding,,
+          deg-degan lagi. Takut ga lulus haha. Tapi ya, gw pasti lulus kok hehe (Pede tingkat dewa haha). Yang penting
+          sih, paham kapan saat kita harus pake kondisional atau kapan harus pake iterasi. Kalo gw sih yang penting
+          kode gw bisa gw baca sendiri. Tapi waktu yang jadi tantangannya. Kudu lebih kreatif memecahkan masalah.
+          javascript leh uga. Have fun gengs!
+        </p>
+      </section>
+      <section id="minggu-4">
+        <h2>Refleksi Minggu 4 Fase 0</h2>
+        <p>
+          Minggu ini lebih ngejelimet lagi haha. Fokusnya adalah merekayasa string dan array menjadi sesuai dengan apa yang
+          kita inginkan. Harus fokus, kreatif, dan ga gampang nyerah. Banyak cara buat nyelesain masalah. Kedepannya sih harus
+          lebih elegan solusinya.
+        </p>
+        <p>
+          Hambatan gw untuk minggu ini adalah di sesi live coding. Ga semua soal gw kerjain. Identifikasi masalahnya adalah
+          ketidakmampuan gw untuk mengetahui method-method atau builtin function string dan array. Mungkin kalo gw paham
+          dengan input dan output dari builtin function, gw bisa lebih ngehemat waktu dan bisa nyelesaiin semua masalahnya
+          dengan lancar jaya.
+        </p>
+        <p>
+          Kedepannya harus lebih dipahami lagi method string dan array serta latihan terus-terusan biar otak ga tumpul.
+          Sisanya, <q cite="">Relax and take it easy</q>. Have fun gengs!
+        </p>
+        <p>Referensi dari gw:</p>
+        <ul>
+          <li><a href="http://www.hackerrank.com">Hackerrank</a></li>
+          <li><a href="https://www.khanacademy.org/computing/computer-science/algorithms">KhanAcademy Algorithm</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer>Made with Magic by Fajar Abdul Karim</footer>
+
+  </body>
+</html>
