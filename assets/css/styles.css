@@ -1,0 +1,48 @@
+#login-btn {
+  border-radius: 0px;
+  color: #ffa125;
+  background-color: white;
+  border: solid 1px
+}
+
+.navbar__item {
+  color: #2e9867;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.intro__text {
+  margin-bottom: 0px;
+  font-size: 37px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.breadcumb__text {
+  color:white;
+  font-size: 16px;
+  padding: 0px 10px 0px 10px;  
+}
+
+.food__donation__category {
+  width: 60%;
+  height: 100%;
+}
+
+#floating__image {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 4.2), 0 6px 20px 0 rgba(0, 0, 0, 23.19);
+}
+
+.action__donate__box {
+  display: flex;
+  justify-content: center;  
+}
+
+.action__button {
+  background-color: #ffa125;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-color: #ffa125;
+  color: white;
+}
