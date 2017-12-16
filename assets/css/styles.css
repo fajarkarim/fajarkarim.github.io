@@ -7,16 +7,17 @@
 
 .navbar__item {
   color: #2e9867;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
+  font-family:Raleway;
 }
 
 .intro__text {
   margin-bottom: 0px;
-  font-size: 37px;
+  font-size: 42px;
   color: white;
-  font-family: sans-serif;
-  font-weight: 500;
+  font-family: Raleway, sans-serif;
+  font-weight: 1000;
 }
 
 .breadcumb__text {
@@ -45,4 +46,57 @@
   padding-bottom: 10px;
   border-color: #ffa125;
   color: white;
+}
+
+.not__choose__action__box {
+  background-color: rgba(255,255,255,0.7);    
+}
+
+.not__choose__action__content {
+  display: flex;
+  justify-content: center; 
+}
+
+.food__donation__category {
+  font-family: Raleway;
+  font-size: larger;
+  color: grey;
+  font-weight: 600;  
+}
+
+.label__form_text {
+  font-family: Lato;
+  font-weight: 700;  
+  font-size: 19px;
+}
+
+.choosed_img {
+  border: #2e9867 4px solid;
+  border-radius: 50%;
+}
+
+.choosed_text {
+  color: #2e9867;
+}
+
+.input__form {
+  background-color: #e8e8e8;
+  height: 50px;
+  font-family: Lato;
+  font-size: 18px;
+}
+
+#donation_food_btn {
+  background-color:#ffa125;
+  color:white;
+  border-color:#ffa125;
+  font-family: Lato;
+  font-size: 17px;
+}
+
+.other_action_text_intro {
+  color: #2e9867;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: Raleway;
 }
