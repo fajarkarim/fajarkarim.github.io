@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/Footer-Clean.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">    
 </head>
 
@@ -17,173 +18,153 @@
     <div>
         <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/">
                     <img src="assets/img/logo.png" style="height:54px;"></img>
                 </a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav mr-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link navbar__item" href="#">Siapa kita ?</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link navbar__item" href="#">Lakukan Aksi</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link navbar__item" href="#">Cerita Pangan</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link navbar__item" href="#tentang_kami">Tentang Kami</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link navbar__item" href="donation/food/">Lakukan Aksi</a></li>
+                        <li id="cerita_pangan_btn" class="nav-item" role="presentation"><a class="nav-link navbar__item" href="#">Cerita Pangan</a></li>
                     </ul><span class="navbar-text actions"><a id="login-btn" class="btn btn-light action-button" role="button" href="#">Masuk / Daftar</a></span></div>
             </div>
         </nav>
     </div>
     
-    <div class="container-fluid" style="height:450px;background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(&quot;assets/img/Mask Group 5.png&quot;);">
-        <div class="container">
-            <div class="pt-3">
-                <span class="breadcumb__text">Garda Pangan </span><img width="20px" src="assets/img/arrows.png"><span class="breadcumb__text">Donasi Makanan</span>
-            </div>
-            <div style="padding-top:145px">
-                <p class="intro__text">Lakukan aksimu sekarang !</p>
-                <p class="intro__text">Donasi kelebihan makananmu</p>
-            </div>
-        </div>
-    </div>
     <div class="container">
-        <div class="card" style="z-index:1;margin-top:-100px;">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-12">
-                        <h4 class="card-title" style="font-family:Lato, sans serif"><strong>Pilih Mayoritas Makanan yang disumbangkan</strong></h4>
-                    </div>
-                    <div class="col-12">
-                        <div class="row"> 
-                            <div class="col">
-                                <div class="row justify-content-center">
-                                    <img class="food__donation__category choosed_img" src="assets/img/Mask Group 10.png">
-                                    <span class="col-md-12 text-center mt-2 food__donation__category choosed_text" >Kue / Roti</span>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="row justify-content-center">
-                                    <img class="food__donation__category" src="assets/img/Mask Group 10.png">
-                                    <span class="col-md-12 text-center mt-2 food__donation__category" >Makanan Kemas</span>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="row justify-content-center">
-                                    <img class="food__donation__category" src="assets/img/Mask Group 10.png">
-                                    <span class="col-md-12 text-center mt-2 food__donation__category" >Sayuran / Buah</span>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="row justify-content-center">
-                                    <img class="food__donation__category" src="assets/img/Mask Group 10.png">
-                                    <span class="col-md-12 text-center mt-2 food__donation__category" >Daging</span>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="row justify-content-center">
-                                    <img class="food__donation__category" src="assets/img/Mask Group 10.png">
-                                    <span class="col-md-12 text-center mt-2 food__donation__category" >Lain-lain</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>        
+        <div class="row">
+            <div class="col intro_beside_carousel p-0">
+                <p 
+                class="text-center"
+                style="padding: 32px;
+                font-size: 41px;
+                font-weight: 700;
+                margin:0;">Berbagi Makanan, Berbagi Harapan</p>
+                <p class="text-center">Setiap bantuanmu Berarti bagi mereka.</p>
+                <div style="display:flex;justify-content:center;">
+                    <button id="callToDonate" class="btn p-3" style="background-color:#ffa125;border:solid 3px white;color:white;border-radius:0;cursor:pointer">DONASI SEKARANG</button>
                 </div>
+            </div>
+            <div class="col p-0">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="assets/img/kegiatan_garda/kegiatan_1.jpg" alt="Kegiatan Garda 1" height="350px">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/img/kegiatan_garda/kegiatan_2.jpg" alt="Kegiatan Garda 2" height="350px">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/img/kegiatan_garda/kegiatan_3.jpg" alt="Kegiatan Garda 3" height="350px">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/img/kegiatan_garda/kegiatan_4.jpg" alt="Kegiatan Garda 4" height="350px">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>            
+        </div>
+    </div>
 
-                <div class="row mt-5">
-                    <div class="col">
-                        <div class="form-group p-3 pl-5 pr-5">
-                            <label class="label__form_text">Nama Organisasi</label>
-                            <input type="text" class="form-control input__form">
+    <!-- tentang kami section  -->
+    <div id="tentang_kami" class="container pt-5">
+        <div class="row">
+            <h3 class="mb-3" style="font-weight:600;font-family:Lato;font-size:32px;">Tentang Kami</h3>
+            
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-6">
+                        <img class="img-fluid" src="assets/img/info.jpg" alt="Info Grafik Garda">   
+                    </div>
+                    <div class="col-6">
+                        <img class="img-fluid" src="assets/img/why_garda.jpg" alt="Info Grafik Garda">   
+                    </div>
+                </div>                                          
+            </div>
+
+            <div class="col-12 mt-3 pt-4 pb-4">                      
+                <p class="text-center" style="font-family:Lato;font-size:18px">
+                    <strong>Garda Pangan</strong> merupakan gerakan food bank yang bertujuan sebagai pusat koordinasi makanan berlebih dan berpotensi terbuang.
+                    Kami mengoordinasi makanan dari restoran, katering, bakery, hotel dan individu untuk nantinya disalurkan pada masyarakat pra sejahtera di Surabaya.                                                
+                </p>
+            </div>
+            <div class="col-12">
+                <p id="kenapa_membantu_header" class="mb-3">Membantu kami berarti kamu membantu</p>
+                <div class="row" style="display:flex;justify-content:center">
+                    <div class="col-3">
+                        <div style="display:flex;justify-content:space-around">
+                            <img src="assets/img/recycling.png" width="128px" height="128px">
                         </div>
-                        <div class="form-group p-3 pl-5 pr-5">
-                            <label class="label__form_text">Alamat Organisasi</label>
-                            <input type="text" class="form-control input__form">
-                        </div>
-                        <div class="form-group p-3 pl-5 pr-5">
-                            <label class="label__form_text">No. Telepon Organisasi</label>
-                            <input type="text" class="form-control input__form">
-                        </div>
-                        <div class="form-group p-3 pl-5 pr-5">
-                            <label class="label__form_text">Email Organisasi</label>
-                            <input type="text" class="form-control input__form">
-                        </div>
-                        <div class="p-3 pl-5 pr-5">
-                            <button id="donation_food_btn" class="btn pl-4 pr-4 pt-2 pb-2">Kirim Data</button>
+                        <p class="text-center pt-3"> <strong>mengurangi makanan berlebih</strong></p>                                               
+                        <div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="form-group p-3 pl-5 pr-5">
-                            <label class="label__form_text">Nama Kontak</label>
-                            <input type="text" class="form-control input__form">
+                    <div class="col-3">
+                        <div style="display:flex;justify-content:center">
+                            <img src="assets/img/care.png" width="128px" height="128px">
+                        </div> 
+                        <strong><p class="text-center pt-3">menyalurkan makanan untuk orang yang membutuhkan</p></strong>                            
+                        <div>
                         </div>
-                        <div class="form-group p-3 pl-5 pr-5">
-                            <label class="label__form_text">Alamat Kontak</label>
-                            <input type="text" class="form-control input__form">
-                        </div>
-                        <div class="form-group p-3 pl-5 pr-5">
-                            <label class="label__form_text">No. Telepon Kontak</label>
-                            <input type="text" class="form-control input__form">
-                        </div>
-                        <div class="form-group p-3 pl-5 pr-5">
-                            <label class="label__form_text">Email Kontak</label>
-                            <input type="text" class="form-control input__form">
+                    </div>
+                    <div class="col-3">
+                        <div style="display:flex;justify-content:center">
+                            <img src="assets/img/planet-earth.png" width="128px" height="128px" style="height:128px">
+                        </div> 
+                        <strong><p class="text-center pt-3">menyelamatkan bumi</p></strong>                                
+                        <div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid" style="background-color:#e8e8e8;">
-        <div class="container" style="margin-top:-130px">
-            <div class="row">
-                <div class="col-md-12" style="margin-top:185px">
-                    <p>Donasi yang sudah diterima dan didistribusikan</p>
-                </div>
-                <div class="col-md-6">
-                    <div class="col-md-12"></div>
-                    <div class="col-md-12"></div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-12 pl-5" style="z-index:1;margin-bottom:-114px;">
-                            <img id="floating__image" src="assets/img/Mask Group 11.png" class="img-fluid" style="width:350px;">
-                        </div>
-                        <div class="col-md-12" style="padding-right:20%">
-                            <div class="card" style="padding-bottom:36px;">
-                                <div class="card-body" style="padding-bottom:52px;">
-                                    <h4 class="card-title text-center" style="margin-top:121px;">Guy Fieri</h4>
-                                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+    <!-- How it work section -->
+    <!-- <div class="container">
+        <div>
+            <h3>How It Work ?</h3>
+            <img class="img-fluid" src="assets/img/how_it_work.jpg">
         </div>
-    </div>
-    <div class="container-fluid" style="background-image:url(&quot;assets/img/Mask Group 5.png&quot;);height:545px;margin-top:-45px">
+    </div> -->
+    
+    <!-- Aksi Lainnya section -->
+    <div class="container-fluid" style="background-image:url(&quot;assets/img/hungry_kid.png&quot;);height:545px;">
         <div class="container">
             <div class="row" style="height:430px;">
-                <div class="col-md-12" style="margin-top:100px;">
-                    <p>Lakukan Aksi lainnya !</p>
+                <div class="col-md-6" style="margin-top:20px;margin-bottom:40px">
+                    <p id="aksi_header"><strong>Bersama kita bisa menyelesaikan kelaparan 19,4 juta jiwa di Indonesia</strong></p>
                 </div>
                 <div class="col-12">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="row" style="display:flex;align-items:center">
-                                <div class="col">
+                                <div id="donateFoodBox" class="col" style="cursor:pointer">
                                     <div class="card" style="background-color: #2e9867;">
                                         <div class="action__donate__box">
-                                            <img class="card-img-top" src="assets/img/donate_money.png" style="width:20%;height:20%;padding-top:20%;padding-bottom:10%">                                        
+                                            <img class="card-img-top" src="assets/img/donate_food.png" style="width:20%;height:20%;padding-top:20%;padding-bottom:10%">                                        
                                         </div>
-                                        <p class="text-center pl-5 pr-5" style="color:white;font-size: 18px">
-                                            Kami mengumpulkan uang untuk melengkapi visi dan misi kami
+                                        <p class="text-center pl-3 pr-3" style="color:white;font-size: 18px">
+                                            Kami mengumpulkan makanan lebih dengan beberapa mitra dan perorangan.
                                         </p>
-                                        <button class="btn action__button" type="button">Button</button>
+                                        <button class="btn action__button" type="button">Donasi Makanan</button>
                                     </div>
-                                </div>
-                                <div class="col">
+                                </div>                                
+                                <div id="donateMoneyBox" class="col" style="cursor:pointer">
                                     <div class="card not__choose__action__box">
                                         <div class="not__choose__action__content">
-                                            <img class="card-img-top" src="assets/img/recommend_logo.png" style="width:40%;height:20%;padding-top:18%">                                        
+                                            <img class="card-img-top" src="assets/img/donate_money_green.png" style="width:20%;height:20%;padding-top:18%">                                        
                                         </div>                                                                               
-                                        <p class="text-center other_action_text_intro">USULKAN PENERIMA</p>
+                                        <p class="text-center other_action_text_intro">DONASI UANG</p>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -201,6 +182,75 @@
             </div>
         </div>
     </div>
+
+    <!-- current condition garda -->
+    <!-- <div class="container" style="padding-top:12px">
+        <p>Telah menjalin kerjasama dengan</p>
+        <div class="row" style="display:flex;justify-content:center;font-size:32px">
+            <div class="p-3">
+                <p class="text-center">5</p>
+                <p class="text-center">Katering</p>
+            </div>
+            <div class="p-3">
+                <p class="text-center">1</p>
+                <p class="text-center">Restoran</p>
+            </div>
+            <div class="p-3">
+                <p class="text-center">1</p>
+                <p class="text-center">Bakery</p>
+            </div>
+            
+        </div>                
+    </div> -->
+
+    <!-- <div class="container footer-clean">      
+        <h4>Hubungi Kami</h4>               
+        <div class="item social">
+            <a href="#"><i class="icon ion-social-facebook"></i></a>
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+            <a href="#"><i class="icon ion-social-snapchat"></i></a>
+            <a href="#"><i class="icon ion-social-instagram"></i></a>
+        </div>           
+    </div> -->
+
+    <!-- Media partner section -->
+    <div class="container">        
+        <img class="img-fluid" src="assets/img/future_collaboration.jpg" alt="kolaborasi">
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">           
+            <div class="modal-body">
+                <iframe  width="100%" height="350" class="col" src="https://www.youtube.com/embed/ei_PYahR0ck?" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            </div>            
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="donasiUang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    disini buat donasi uang
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Modal -->
+
     <div class="footer-clean">
         <footer>
             <div class="container">
@@ -237,9 +287,10 @@
                             <li><a href="#">Donor Makanan</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-12 item social" style="display:flex;justify-content:center">                        
+                                 
+                    <div class="col-lg-12 item social" style="display:flex;justify-content:center">   
                         <a href="#"><i class="icon ion-social-facebook"></i></a>
-                        <a href="#"><i class="icon ion-social-twitter"></i></a>
+                        <a href="#"><i class="fa fa-whatsapp"></i></a>
                         <a href="#"><i class="icon ion-social-snapchat"></i></a>
                         <a href="#"><i class="icon ion-social-instagram"></i></a>
                     </div>
@@ -250,6 +301,26 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $( document ).ready(function() {            
+        //     $('#exampleModal').modal({show:true});  
+            $('#cerita_pangan_btn').click(function() {
+                $('#exampleModal').modal({show:true});
+            })       
+
+            $('#donateFoodBox').click(function() {
+                window.location.href = 'donation/food'
+            }) 
+
+            $('#callToDonate').click(function() {
+                window.location.href = 'donation/food'
+            }) 
+
+            $('#donateMoneyBox').click(function() {
+                $('#donasiUang').modal({show:true});
+            })   
+        });  
+    </script>
 </body>
 
 </html>

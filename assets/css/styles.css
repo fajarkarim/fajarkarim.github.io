@@ -46,6 +46,7 @@
   padding-bottom: 10px;
   border-color: #ffa125;
   color: white;
+  cursor: pointer;
 }
 
 .not__choose__action__box {
@@ -99,4 +100,25 @@
   font-weight: 700;
   font-size: 22px;
   font-family: Raleway;
+}
+
+.intro_beside_carousel {
+  background-color: #6dda83;
+  color: white;
+  font-family: Lato;
+}
+
+#kenapa_membantu_header {
+  color: #2e9867;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: Raleway;
+}
+
+#aksi_header{
+  margin-top: 20px;
+  /* margin-bottom: 35px; */
+  color: #ffa125;  
+  font-size: 26px;
+  font-family: Raleway;  
 }
