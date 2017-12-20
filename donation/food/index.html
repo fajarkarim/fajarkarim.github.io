@@ -4,12 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>garda-donatur-makanan-2</title>
+    <title>Garda Pangan</title>
     <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="../../assets/css/Footer-Clean.css">
     <link rel="stylesheet" href="../../assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">    
 </head>
 
@@ -25,8 +26,10 @@
                     <ul class="nav navbar-nav mr-auto">
                         <li class="nav-item" role="presentation"><a class="nav-link navbar__item" href="#">Siapa kita ?</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link navbar__item" href="#">Lakukan Aksi</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link navbar__item" href="#">Cerita Pangan</a></li>
-                    </ul><span class="navbar-text actions"><a id="login-btn" class="btn btn-light action-button" role="button" href="#">Masuk / Daftar</a></span></div>
+                        <li id="cerita_pangan_btn" class="nav-item" role="presentation"><a class="nav-link navbar__item" href="#">Cerita Pangan</a></li>
+                    </ul>
+                    <!-- <span class="navbar-text actions"><a id="login-btn" class="btn btn-light action-button" role="button" href="#">Masuk / Daftar</a></span> -->
+                </div>
             </div>
         </nav>
     </div>
@@ -53,25 +56,25 @@
                         <div class="row"> 
                             <div class="col">
                                 <div class="row justify-content-center">
-                                    <img class="food__donation__category choosed_img" src="../../assets/img/Mask Group 10.png">
-                                    <span class="col-md-12 text-center mt-2 food__donation__category choosed_text" >Kue / Roti</span>
+                                    <img class="food__donation__category" src="../../assets/img/Mask Group 6.png">
+                                    <span class="col-md-12 text-center mt-2 food__donation__category" >Kue / Roti</span>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="row justify-content-center">
-                                    <img class="food__donation__category" src="../../assets/img/Mask Group 10.png">
-                                    <span class="col-md-12 text-center mt-2 food__donation__category" >Makanan Kemas</span>
+                                    <img class="food__donation__category choosed_img" src="../../assets/img/Mask Group 7.png">
+                                    <span class="col-md-12 text-center mt-2 food__donation__category choosed_text" >Makanan Kemas</span>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="row justify-content-center">
-                                    <img class="food__donation__category" src="../../assets/img/Mask Group 10.png">
+                                    <img class="food__donation__category" src="../../assets/img/Mask Group 8.png">
                                     <span class="col-md-12 text-center mt-2 food__donation__category" >Sayuran / Buah</span>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="row justify-content-center">
-                                    <img class="food__donation__category" src="../../assets/img/Mask Group 10.png">
+                                    <img class="food__donation__category" src="../../assets/img/Mask Group 9.png">
                                     <span class="col-md-12 text-center mt-2 food__donation__category" >Daging</span>
                                 </div>
                             </div>
@@ -157,7 +160,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid" style="background-image:url(&quot;../../assets/img/Mask Group 5.png&quot;);height:545px;margin-top:-45px">
+    <div class="container-fluid" style="background-image:url(&quot;../../assets/img/hungry_kid.png&quot;);height:545px;margin-top:-45px">
         <div class="container">
             <div class="row" style="height:430px;">
                 <div class="col-md-12" style="margin-top:100px;">
@@ -168,14 +171,11 @@
                         <div class="col-md-12">
                             <div class="row" style="display:flex;align-items:center">
                                 <div class="col">
-                                    <div class="card" style="background-color: #2e9867;">
-                                        <div class="action__donate__box">
-                                            <img class="card-img-top" src="../../assets/img/donate_money.png" style="width:20%;height:20%;padding-top:20%;padding-bottom:10%">                                        
-                                        </div>
-                                        <p class="text-center pl-5 pr-5" style="color:white;font-size: 18px">
-                                            Kami mengumpulkan uang untuk melengkapi visi dan misi kami
-                                        </p>
-                                        <button class="btn action__button" type="button">Button</button>
+                                    <div class="card not__choose__action__box">
+                                        <div class="not__choose__action__content">
+                                            <img class="card-img-top" src="../../assets/img/donate_money_green.png" style="width:22%;height:20%;padding-top:19%;padding-bottom:9%">                                        
+                                        </div>                                                                               
+                                        <p class="text-center other_action_text_intro">USULKAN PENERIMA</p>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -201,6 +201,7 @@
             </div>
         </div>
     </div>
+
     <div class="footer-clean">
         <footer>
             <div class="container">
@@ -237,19 +238,77 @@
                             <li><a href="#">Donor Makanan</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-12 item social" style="display:flex;justify-content:center">                        
-                        <a href="#"><i class="icon ion-social-facebook"></i></a>
-                        <a href="#"><i class="icon ion-social-twitter"></i></a>
-                        <a href="#"><i class="icon ion-social-snapchat"></i></a>
-                        <a href="#"><i class="icon ion-social-instagram"></i></a>
+                                 
+                    <div class="col-lg-12 item social" style="display:flex;justify-content:center">                           
+                        <a href="https://www.instagram.com/gardapangan/" target="_blank"><i class="fa fa-whatsapp"></i></a>                        
+                        <a href="0812 4022 8733"><i class="icon ion-social-instagram"></i></a>
                     </div>
                     <p class="text-center copyright">Garda Pangan © 2017 © dibuat di Jakarta & Surabaya</p>
                 </div>
             </div>
         </footer>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">           
+                <div class="modal-body">
+                    <iframe  width="100%" height="350" class="col" src="https://www.youtube.com/embed/ei_PYahR0ck?" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>            
+                </div>
+            </div>
+        </div>
+    
+        <div class="modal fade" id="donasiUang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        disini buat donasi uang
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- End Modal -->
     <script src="../../assets/js/jquery.min.js"></script>
     <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+            $( document ).ready(function() {            
+                // $('#exampleModal').modal({show:true});  
+                $('#cerita_pangan_btn').click(function() {
+                    $('#exampleModal').modal({show:true});
+                })       
+    
+                $('#donateFoodBox').click(function() {
+                    window.location.href = 'donation/food'
+                }) 
+                $('#donateFood').click(function() {
+                    window.location.href = 'donation/food'
+                }) 
+    
+                $('#callToDonate').click(function() {
+                    window.location.href = 'donation/food'
+                }) 
+    
+                $('#donateMoneyBox').click(function() {
+                    // $('#donasiUang').modal({show:true});
+                    window.location.href = 'donation/money'
+                })   
+                $('#donateMoney').click(function() {
+                    // $('#donasiUang').modal({show:true});
+                    window.location.href = 'donation/money'
+                }) 
+            });  
+        </script>
 </body>
 
 </html>
