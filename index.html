@@ -1924,6 +1924,49 @@ p {
     margin: 0;
     color: #ffffff;
 }
+
+.mbr-container.mbr-container-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+    
+}
+
+.mbr-container.mbr-container-custom amp-img {
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.mbr-container.mbr-container-custom amp-img::after {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    height: 500px;
+    width: 300px;    
+}
+
+.mbr-container.mbr-container-custom amp-img:hover {
+    transform: scale(1.2, 1.2);    
+}
+
+.mbr-title.name {
+    padding-top: 1em;    
+    padding-bottom: 0;
+}
+
+.profile-work {
+    color: #aaa;
+}
+
+.credit-heart:hover {
+    animation: beat 1s infinite alternate;
+}
+
+@keyframes beat {
+    to {
+        transform: scale(1.3);
+    }
+}
  </style>
 
   <script async  src="https://cdn.ampproject.org/v0.js"></script>
@@ -1956,7 +1999,8 @@ p {
                   
               </amp-img>
           </span>
-          <p class="brand-name mbr-fonts-style display-5">fajar</p>
+          <p class="brand-name mbr-fonts-style display-5">fajarkarim.com</p>
+
       </div>
     </nav>
     
@@ -1969,40 +2013,16 @@ p {
 </section>
 
 <section class="mbr-section content1 cid-qEUCUfZz5g" id="content1-e">
-
-    
-
-    <div class="mbr-container">
-        <h2 class="mbr-title align-center mbr-fonts-style mbr-bold display-5"><span>Halo, it's me fajar</span></h2>                
+    <div class="mbr-container mbr-container-custom">
+        <amp-img src="assets/images/qlue.jpeg" width="70" height="100" alt="fajarkarim.com"></amp-img>
+        <h1 class="mbr-title align-center mbr-fonts-style mbr-bold display-5 name"><span>Fajar Abdul Karim</span></h1>
+        <h2 class="profile-work">Front End Developer at Qlue working on <span>Mycity</span></h2>                
     </div>
 </section>
 
-<section class="content4 mbr-section article cid-qEUCUSWRXk" id="content4-f">
-    
-     
-
+<section class="content4 mbr-section article cid-qEUCUSWRXk" id="content4-f">         
     <div class="container">
         <div class="mbr-text align-center mbr-fonts-style mbr-light display-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod at id fugiat natus a voluptas eveniet officia iure nihil nostrum ad, modi ipsam, dicta ullam accusamus, voluptate aspernatur. Accusamus, aliquid?</div>
-    </div>
-</section>
-
-<section class="features10 cid-qEUCD1DBzA" id="features10-d">
-
-    
-       
-    <div class="container">
-        <div class="mbr-row mbr-justify-content-center">
-            <div class="image-block mbr-col-sm-12 mbr-col-md-6">
-                <amp-img src="assets/images/billy-pasco-317724-1545x1931.jpg" layout="responsive" width="540.0699119627136" height="675" alt="Mobirise">
-                    
-                </amp-img>
-            </div>
-            <div class="text-block mbr-col-sm-12 mbr-col-md-6">
-                <h3 class="mbr-section-title mbr-fonts-style align-left display-1">Julie C.</h3>
-                <p class="mbr-fonts-style mbr-text align-left display-7">INTERFACE DESIGNER</p>
-                
-            </div>
-        </div>
     </div>
 </section>
 
@@ -2034,132 +2054,21 @@ p {
     </div>
 </section>
 
-<section class="features2 mbr-section cid-qEs7LW7q9b" id="features2-5">
-
-    
-    
-    <div class="container">
-        <div class="mbr-row mbr-justify-content-center">
-            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <amp-img src="assets/images/edho-pratama-149011-4062x27081-2000x1333.jpg" layout="responsive" width="349.5873968492123" height="233" alt="Mobirise">
-                            
-                        </amp-img>
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style align-left mbr-light display-2">Free Fonts</h4>
-                        <p class="mbr-text mbr-fonts-style align-left display-4">Duis consectetur neque orci. Praesent vitae consequat ante, vitae aliquam justo. Curabitur fermentum vel mauris a placerat.</p>
-                        
-                    </div>
-                </div>
-            </div>
-            
-            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <amp-img src="assets/images/angelo-pantazis-180828-2000x1333.jpg" layout="responsive" height="233" width="349.5873968492123" alt="Mobirise">
-                            
-                        </amp-img>
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style align-left mbr-light display-2">Lettering</h4>
-                        <p class="mbr-text mbr-fonts-style align-left display-4">Aenean vestibulum aliquam mauris non ullamcorper. Maecenas in ex eget tellus iaculis tempus. Sed commodo posuere placerat. </p>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4 last-child">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <amp-img src="assets/images/alisha-hieb-249784-2000x1333.jpg" layout="responsive" height="233" width="349.5873968492123" alt="Mobirise">
-                            
-                        </amp-img>
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style align-left mbr-light display-2">Creative Photography</h4>
-                        <p class="mbr-text mbr-fonts-style align-left display-4">Curabitur ligula ex, sagittis vel turpis sed, cursus aliquam risus. Nunc dictum enim a ante maximus, in sagittis elit tincidunt.</p>
-                        
-                    </div>
-                </div>
-            </div>
-
-            
-            
-        </div>
-    </div>
-</section>
-
 <section class="mbr-section content1 cid-qEsfZfp5JO" id="content1-6">
 
     
 
     <div class="mbr-container">
-        <h2 class="mbr-title align-center mbr-fonts-style mbr-bold display-2">My awards</h2>
-        
-        
-    </div>
-</section>
-
-<section class="content7 mbr-section cid-qEsg28qkGt" id="content7-8">
-     
-
-    <div class="mbr-container">
-        <div class="mbr-text counter-container mbr-fonts-style display-7">
-            <ul>
-                <li><strong>2007</strong> - Cras at sem neque. Morbi lorem dolor, cursus id nulla iaculis, feugiat interdum est. Nam neque augue, feugiat non ligula sit amet, pulvinar lacinia lacus. Nam tempus velit ut nunc facilisis, ac ornare elit pulvinar.&nbsp;<br></li><li><strong>2012 </strong>- Donec vitae quam at quam venenatis sollicitudin. In ornare, est in cursus maximus, ipsum dolor rhoncus urna, id finibus dolor ex lobortis justo. Sed purus ligula, vehicula nec tempor in, feugiat et nulla.
-</li><li><strong>2013</strong> - Quisque eu purus in justo lacinia condimentum nec eu risus. Fusce tellus tortor, lobortis non sagittis in, suscipit eget libero. Praesent ac pellentesque erat, quis imperdiet odio. Sed imperdiet iaculis enim a volutpat.&nbsp;</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section content1 cid-qEshhjrWgF" id="content1-a">
-
-    
-
-    <div class="mbr-container">
-        <h2 class="mbr-title align-center mbr-fonts-style mbr-bold display-2">My background</h2>
-        
+        <h2 class="mbr-title align-center mbr-fonts-style mbr-bold display-2">My Story</h2>        
         
     </div>
 </section>
 
-<section class="content7 mbr-section cid-qEshgCtutB" id="content7-9">
-     
-
-    <div class="mbr-container">
-        <div class="mbr-text counter-container mbr-fonts-style display-7">
-            <ul>
-                <li><strong>Smith College Theatre Courses 2012&nbsp;</strong>- Aenean sagittis erat ac ipsum molestie egestas. Fusce dignissim risus diam, in pulvinar nisl varius at. Ut sed metus laoreet, tempor dui a, lacinia lectus.
-</li><li><strong>Modern Poetry Course 2014</strong> - Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc et lectus vitae ipsum pellentesque egestas. 
-</li><li><strong>Interface Lab 2015</strong> - Donec eget ante rhoncus, malesuada orci vel, pellentesque ipsum. Donec condimentum dui sed lobortis pharetra.&nbsp;</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section class="social-share cid-qEshMc0lsG" id="social-share-b">
-
-    
-
-    <div class="wrapper">
-        <h1 class="mbr-fonts-style align-center display-2">Share this page</h1>
-        <amp-social-share type="email"></amp-social-share>
-        <amp-social-share type="facebook" data-param-app_id="254325784911610"></amp-social-share>
-        <amp-social-share type="gplus"></amp-social-share>
-        <amp-social-share type="linkedin"></amp-social-share>
-        <amp-social-share type="pinterest" data-param-media="https://ampbyexample.com/img/amp.jpg"></amp-social-share>
-        <amp-social-share type="tumblr"></amp-social-share>
-        <amp-social-share type="twitter"></amp-social-share>
-    </div>
-</section>
 
 <section class="footer1 cid-qEsj1x8oQy" id="footer1-c">
     <div class="container">
         <div class="mbr-col-sm-12 align-center mbr-white">
-            <p class="mbr-text mbr-fonts-style display-7">© Copyright 2017 Mobirise - All Rights Reserved</p>
+            <p class="mbr-text mbr-fonts-style display-7">© Created With <amp-img class="credit-heart" src="assets/icons/like.png" height="16" width="16" alt="love fajarkarim.com"/>  </p>
         </div>
     </div>
 </section>
